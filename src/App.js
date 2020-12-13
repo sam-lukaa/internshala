@@ -33,6 +33,8 @@ export default function App() {
       <Posts posts={currentPosts} loading={loading} />
       <Pagination
         number={postsPerPage}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
         totalPosts={posts.length}
         paginate={paginate}
         className="bg-gray-800"
